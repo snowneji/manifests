@@ -15,7 +15,7 @@ spec:
             configMapKeyRef:
               name: parameters
               key: project
-        image: gcr.io/$(project)/profile-controller:latest
+        image: gcr.docker.prod.walmart.com/$(project)/profile-controller:latest
         ports:
         - containerPort: 2345
         securityContext:

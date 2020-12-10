@@ -35,9 +35,9 @@ vars:
 configurations:
 - ../../kfserving-install/base/params.yaml
 images:
-- name: gcr.io/kubebuilder/kube-rbac-proxy
-  newName: gcr.io/kubebuilder/kube-rbac-proxy
+- name: gcr.docker.prod.walmart.com/kubebuilder/kube-rbac-proxy
+  newName: gcr.docker.prod.walmart.com/kubebuilder/kube-rbac-proxy
   newTag: v0.4.0
-- name: $(registry)/kfserving-controller
-  newName: $(registry)/kfserving-controller
+- name: gcr.docker.prod.walmart.com/kfserving/kfserving-controller
+  newName: gcr.docker.prod.walmart.com/kfserving/kfserving-controller
   newTag: v0.3.0

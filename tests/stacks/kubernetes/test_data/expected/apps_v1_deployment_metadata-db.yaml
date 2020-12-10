@@ -30,7 +30,7 @@ spec:
             name: metadata-db-parameters
         - secretRef:
             name: metadata-db-secrets
-        image: mysql:8.0.3
+        image: hub.docker.prod.walmart.com/library/mysql:8.0.3
         name: db-container
         ports:
         - containerPort: 3306

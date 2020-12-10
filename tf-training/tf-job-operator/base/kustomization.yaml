@@ -10,6 +10,6 @@ resources:
 commonLabels:
   kustomize.component: tf-job-operator
 images:
-- name: gcr.io/kubeflow-images-public/tf_operator
-  newName: gcr.io/kubeflow-images-public/tf_operator
+- name: gcr.docker.prod.walmart.com/kubeflow-images-public/tf_operator
+  newName: gcr.docker.prod.walmart.com/kubeflow-images-public/tf_operator
   newTag: vmaster-ga2ae7bff

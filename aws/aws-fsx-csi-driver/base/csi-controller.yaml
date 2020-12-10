@@ -46,7 +46,7 @@ spec:
             - name: socket-dir
               mountPath: /var/lib/csi/sockets/pluginproxy/
         - name: csi-provisioner
-          image: quay.io/k8scsi/csi-provisioner:v1.3.0
+          image: quay.docker.prod.walmart.com/k8scsi/csi-provisioner:v1.3.0
           args:
             - --timeout=5m
             - --csi-address=$(ADDRESS)

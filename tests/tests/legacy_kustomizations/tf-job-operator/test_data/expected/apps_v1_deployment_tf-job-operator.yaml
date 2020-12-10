@@ -50,6 +50,6 @@ spec:
           valueFrom:
             fieldRef:
               fieldPath: metadata.name
-        image: gcr.io/kubeflow-images-public/tf_operator:vmaster-ga2ae7bff
+        image: gcr.docker.prod.walmart.com/kubeflow-images-public/tf_operator:vmaster-ga2ae7bff
         name: tf-job-operator
       serviceAccountName: tf-job-operator

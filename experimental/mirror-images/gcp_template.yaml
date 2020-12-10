@@ -4,33 +4,33 @@ kind: Replication
 spec:
   patterns:
   - src:
-      include: gcr.io/kubeflow-images-public
+      include: gcr.docker.prod.walmart.com/kubeflow-images-public
     # change to the gcr registry as image replication destination
-    dest: gcr.io/gcp-private-dev/mirror   # {"type":"string","x-kustomize":{"setBy":"kpt","partialSetters":[{"name":"gcloud.core.project","value":"gcp-private-dev"}]}}
+    dest: gcr.docker.prod.walmart.com/gcp-private-dev/mirror   # {"type":"string","x-kustomize":{"setBy":"kpt","partialSetters":[{"name":"gcloud.core.project","value":"gcp-private-dev"}]}}
   - src:
-      include: quay.io/jetstack
+      include: quay.docker.prod.walmart.com/jetstack
     # change to the gcr registry as image replication destination
-    dest: gcr.io/gcp-private-dev/mirror   # {"type":"string","x-kustomize":{"setBy":"kpt","partialSetters":[{"name":"gcloud.core.project","value":"gcp-private-dev"}]}}    
+    dest: gcr.docker.prod.walmart.com/gcp-private-dev/mirror   # {"type":"string","x-kustomize":{"setBy":"kpt","partialSetters":[{"name":"gcloud.core.project","value":"gcp-private-dev"}]}}    
   - src:
-      include: gcr.io/ml-pipeline
+      include: gcr.docker.prod.walmart.com/ml-pipeline
     # change to the gcr registry as image replication destination
-    dest: gcr.io/gcp-private-dev/mirror   # {"type":"string","x-kustomize":{"setBy":"kpt","partialSetters":[{"name":"gcloud.core.project","value":"gcp-private-dev"}]}}          
+    dest: gcr.docker.prod.walmart.com/gcp-private-dev/mirror   # {"type":"string","x-kustomize":{"setBy":"kpt","partialSetters":[{"name":"gcloud.core.project","value":"gcp-private-dev"}]}}          
   - src:
       include: argoproj
     # change to the gcr registry as image replication destination
-    dest: gcr.io/gcp-private-dev/mirror   # {"type":"string","x-kustomize":{"setBy":"kpt","partialSetters":[{"name":"gcloud.core.project","value":"gcp-private-dev"}]}}
+    dest: gcr.docker.prod.walmart.com/gcp-private-dev/mirror   # {"type":"string","x-kustomize":{"setBy":"kpt","partialSetters":[{"name":"gcloud.core.project","value":"gcp-private-dev"}]}}
   - src:
       include: minio
     # change to the gcr registry as image replication destination
-    dest: gcr.io/gcp-private-dev/mirror   # {"type":"string","x-kustomize":{"setBy":"kpt","partialSetters":[{"name":"gcloud.core.project","value":"gcp-private-dev"}]}}          
+    dest: gcr.docker.prod.walmart.com/gcp-private-dev/mirror   # {"type":"string","x-kustomize":{"setBy":"kpt","partialSetters":[{"name":"gcloud.core.project","value":"gcp-private-dev"}]}}          
   # Use the existing public context
   - src:
       include: mysql
     # change to the gcr registry as image replication destination
-    dest: gcr.io/gcp-private-dev/mirror   # {"type":"string","x-kustomize":{"setBy":"kpt","partialSetters":[{"name":"gcloud.core.project","value":"gcp-private-dev"}]}}          
+    dest: gcr.docker.prod.walmart.com/gcp-private-dev/mirror   # {"type":"string","x-kustomize":{"setBy":"kpt","partialSetters":[{"name":"gcloud.core.project","value":"gcp-private-dev"}]}}          
     # Use the existing public context
   - src:
       include: metacontroller
     # change to the gcr registry as image replication destination
-    dest: gcr.io/gcp-private-dev/mirror   # {"type":"string","x-kustomize":{"setBy":"kpt","partialSetters":[{"name":"gcloud.core.project","value":"gcp-private-dev"}]}}          
+    dest: gcr.docker.prod.walmart.com/gcp-private-dev/mirror   # {"type":"string","x-kustomize":{"setBy":"kpt","partialSetters":[{"name":"gcloud.core.project","value":"gcp-private-dev"}]}}          
   context: gs://kubeflow-examples/image-replicate/replicate-context.tar.gz

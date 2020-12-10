@@ -65,7 +65,7 @@ spec:
         - --meshConfig=/etc/istio/config/mesh
         - --healthCheckInterval=2s
         - --healthCheckFile=/health
-        image: gcr.io/istio-release/sidecar_injector:release-1.3-latest-daily
+        image: gcr.docker.prod.walmart.com/istio-release/sidecar_injector:release-1.3-latest-daily
         imagePullPolicy: IfNotPresent
         livenessProbe:
           exec:

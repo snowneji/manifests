@@ -42,5 +42,5 @@ spec:
     - "mxnet-training"
     links:
     - description: About
-      url: "https://github.com/kubeflow/mxnet-operator"
+      url: "https://github.com/hub.docker.prod.walmart.com/kubeflow/mxnet-operator"
   addOwnerRef: true

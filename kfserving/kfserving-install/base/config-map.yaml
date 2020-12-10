@@ -27,7 +27,7 @@ data:
     }
   logger: |-
     {
-        "image" : "gcr.io/kfserving/logger:v0.3.0",
+        "image" : "gcr.docker.prod.walmart.com/kfserving/logger:v0.3.0",
         "memoryRequest": "100Mi",
         "memoryLimit": "1Gi",
         "cpuRequest": "100m",
@@ -58,21 +58,21 @@ data:
             ]
         },
         "sklearn": {
-            "image": "gcr.io/kfserving/sklearnserver",
+            "image": "gcr.docker.prod.walmart.com/kfserving/sklearnserver",
             "defaultImageVersion": "v0.3.0",
             "allowedImageVersions": [
                "v0.3.0"
             ]
         },
         "xgboost": {
-            "image": "gcr.io/kfserving/xgbserver",
+            "image": "gcr.docker.prod.walmart.com/kfserving/xgbserver",
             "defaultImageVersion": "v0.3.0",
             "allowedImageVersions": [
                "v0.3.0"
             ]
         },
         "pytorch": {
-            "image": "gcr.io/kfserving/pytorchserver",
+            "image": "gcr.docker.prod.walmart.com/kfserving/pytorchserver",
             "defaultImageVersion": "v0.3.0",
             "defaultGpuImageVersion": "v0.3.0-gpu",
             "allowedImageVersions": [
@@ -81,7 +81,7 @@ data:
             ]
         },
         "tensorrt": {
-            "image": "nvcr.io/nvidia/tensorrtserver",
+            "image": "nvcr.docker.prod.walmart.com/nvidia/tensorrtserver",
             "defaultImageVersion": "19.05-py3",
             "allowedImageVersions": [
                "19.05-py3"
@@ -90,7 +90,7 @@ data:
     }
   storageInitializer: |-
     {
-        "image" : "gcr.io/kfserving/storage-initializer:v0.3.0",
+        "image" : "gcr.docker.prod.walmart.com/kfserving/storage-initializer:v0.3.0",
         "memoryRequest": "100Mi",
         "memoryLimit": "1Gi",
         "cpuRequest": "100m",

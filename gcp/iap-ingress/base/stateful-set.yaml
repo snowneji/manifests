@@ -27,7 +27,7 @@ spec:
           value: $(ingressName)
         - name: USE_ISTIO
           value: "true"
-        image: gcr.io/kubeflow-images-public/ingress-setup:latest
+        image: gcr.docker.prod.walmart.com/kubeflow-images-public/ingress-setup:latest
         name: backend-updater
         volumeMounts:
         - mountPath: /var/envoy-config/

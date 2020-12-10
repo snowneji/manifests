@@ -6,12 +6,12 @@ metadata:
   annotations:
     config.kubernetes.io/function: |
       container:
-        image: gcr.io/kubeflow-images-public/kpt-fns:v1.0-rc.3-58-g616f986-dirty
+        image: gcr.docker.prod.walmart.com/kubeflow-images-public/kpt-fns:v1.0-rc.3-58-g616f986-dirty
 spec:
   imageMappings:
-  - src: quay.io/jetstack
-    dest: gcr.io/customerProject/mirror/quay.io/jetstack # {"$kpt-set":"image-mirror-quay-io-jetstack"}
-  - src: gcr.io/kubeflow-images-public
-    dest: gcr.io/customerProject/mirror/gcr.io/kubeflow-images-public # {"$kpt-set":"image-mirror-kubeflow-images-public"}
+  - src: quay.docker.prod.walmart.com/jetstack
+    dest: gcr.docker.prod.walmart.com/customerProject/mirror/quay.docker.prod.walmart.com/jetstack # {"$kpt-set":"image-mirror-quay-io-jetstack"}
+  - src: gcr.docker.prod.walmart.com/kubeflow-images-public
+    dest: gcr.docker.prod.walmart.com/customerProject/mirror/gcr.docker.prod.walmart.com/kubeflow-images-public # {"$kpt-set":"image-mirror-kubeflow-images-public"}
   - src: metacontroller
-    dest: gcr.io/customerProject/mirror/metacontroller # {"$kpt-set":"image-mirror-metacontroller"}
+    dest: gcr.docker.prod.walmart.com/customerProject/mirror/metacontroller # {"$kpt-set":"image-mirror-metacontroller"}

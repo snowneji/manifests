@@ -21,7 +21,7 @@ spec:
         - $(lock-namespace)
         - --kubectl-delivery-image
         - $(kubectl-delivery-image)
-        image: mpioperator/mpi-operator:latest
+        image: hub.docker.prod.walmart.com/mpioperator/mpi-operator:latest
         imagePullPolicy: Always
         name: mpi-operator
       serviceAccountName: mpi-operator

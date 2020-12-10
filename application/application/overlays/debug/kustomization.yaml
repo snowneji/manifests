@@ -5,6 +5,6 @@ bases:
 patchesStrategicMerge:
 - stateful-set.yaml
 images:
-- name: gcr.io/$(project)/application-controller
-  newName: gcr.io/$(project)/application-controller
+- name: gcr.docker.prod.walmart.com/$(project)/application-controller
+  newName: gcr.docker.prod.walmart.com/$(project)/application-controller
   newTag: latest

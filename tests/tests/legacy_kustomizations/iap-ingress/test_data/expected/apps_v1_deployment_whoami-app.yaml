@@ -38,7 +38,7 @@ spec:
       - env:
         - name: PORT
           value: "8081"
-        image: gcr.io/cloud-solutions-group/esp-sample-app:1.0.0
+        image: gcr.docker.prod.walmart.com/cloud-solutions-group/esp-sample-app:1.0.0
         name: app
         ports:
         - containerPort: 8081

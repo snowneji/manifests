@@ -11,5 +11,5 @@ commonLabels:
   kustomize.component: mxnet-operator
 images:
 - name: mxjob/mxnet-operator
-  newName: kubeflow/mxnet-operator
+  newName: hub.docker.prod.walmart.com/kubeflow/mxnet-operator
   newTag: v1.0.0-20200625

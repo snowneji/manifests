@@ -21,7 +21,7 @@ spec:
       name: ui
     spec:
       containers:
-      - image: gcr.io/kubeflow-images-public/metadata-frontend:v0.1.8
+      - image: gcr.docker.prod.walmart.com/kubeflow-images-public/metadata-frontend:v0.1.8
         imagePullPolicy: IfNotPresent
         name: metadata-ui
         ports:

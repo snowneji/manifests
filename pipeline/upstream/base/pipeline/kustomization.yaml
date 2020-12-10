@@ -35,15 +35,15 @@ resources:
 - container-builder-sa.yaml
 - viewer-sa.yaml
 images:
-- name: gcr.io/ml-pipeline/api-server
+- name: gcr.docker.prod.walmart.com/ml-pipeline/api-server
   newTag: 1.0.0
-- name: gcr.io/ml-pipeline/persistenceagent
+- name: gcr.docker.prod.walmart.com/ml-pipeline/persistenceagent
   newTag: 1.0.0
-- name: gcr.io/ml-pipeline/scheduledworkflow
+- name: gcr.docker.prod.walmart.com/ml-pipeline/scheduledworkflow
   newTag: 1.0.0
-- name: gcr.io/ml-pipeline/frontend
+- name: gcr.docker.prod.walmart.com/ml-pipeline/frontend
   newTag: 1.0.0
-- name: gcr.io/ml-pipeline/viewer-crd-controller
+- name: gcr.docker.prod.walmart.com/ml-pipeline/viewer-crd-controller
   newTag: 1.0.0
-- name: gcr.io/ml-pipeline/visualization-server
+- name: gcr.docker.prod.walmart.com/ml-pipeline/visualization-server
   newTag: 1.0.0

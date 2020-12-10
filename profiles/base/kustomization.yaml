@@ -19,11 +19,11 @@ configMapGenerator:
   - params.env
   name: profiles-parameters
 images:
-- name: gcr.io/kubeflow-images-public/kfam
-  newName: gcr.io/kubeflow-images-public/kfam
+- name: gcr.docker.prod.walmart.com/kubeflow-images-public/kfam
+  newName: gcr.docker.prod.walmart.com/kubeflow-images-public/kfam
   newTag: v1.1.0-g9f3bfd00
-- name: gcr.io/kubeflow-images-public/profile-controller
-  newName: gcr.io/kubeflow-images-public/profile-controller
+- name: gcr.docker.prod.walmart.com/kubeflow-images-public/profile-controller
+  newName: gcr.docker.prod.walmart.com/kubeflow-images-public/profile-controller
   newTag: v1.1.0-ga49f658f
 vars:
 - fieldref:

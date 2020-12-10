@@ -10,21 +10,21 @@ configMapGenerator:
 images:
 - name: docker.io/prom/prometheus
   newTag: v2.8.0
-- name: gcr.io/istio-release/citadel
+- name: gcr.docker.prod.walmart.com/istio-release/citadel
   newTag: release-1.3-latest-daily
-- name: gcr.io/istio-release/galley
+- name: gcr.docker.prod.walmart.com/istio-release/galley
   newTag: release-1.3-latest-daily
-- name: gcr.io/istio-release/kubectl
+- name: gcr.docker.prod.walmart.com/istio-release/kubectl
   newTag: release-1.3-latest-daily
-- name: gcr.io/istio-release/mixer
+- name: gcr.docker.prod.walmart.com/istio-release/mixer
   newTag: release-1.3-latest-daily
-- name: gcr.io/istio-release/node-agent-k8s
+- name: gcr.docker.prod.walmart.com/istio-release/node-agent-k8s
   newTag: release-1.3-latest-daily
-- name: gcr.io/istio-release/pilot
+- name: gcr.docker.prod.walmart.com/istio-release/pilot
   newTag: release-1.3-latest-daily
-- name: gcr.io/istio-release/proxyv2
+- name: gcr.docker.prod.walmart.com/istio-release/proxyv2
   newTag: release-1.3-latest-daily
-- name: gcr.io/istio-release/sidecar_injector
+- name: gcr.docker.prod.walmart.com/istio-release/sidecar_injector
   newTag: release-1.3-latest-daily
 
 resources:

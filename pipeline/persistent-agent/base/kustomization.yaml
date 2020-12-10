@@ -9,6 +9,6 @@ resources:
 - deployment.yaml
 - service-account.yaml
 images:
-- name: gcr.io/ml-pipeline/persistenceagent
+- name: gcr.docker.prod.walmart.com/ml-pipeline/persistenceagent
   newTag: 0.2.5
-  newName: gcr.io/ml-pipeline/persistenceagent
+  newName: gcr.docker.prod.walmart.com/ml-pipeline/persistenceagent

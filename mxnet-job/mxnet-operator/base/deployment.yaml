@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - command:
-        - /opt/kubeflow/mxnet-operator.v1
+        - /opt/hub.docker.prod.walmart.com/kubeflow/mxnet-operator.v1
         env:
         - name: MY_POD_NAMESPACE
           valueFrom:
@@ -23,7 +23,7 @@ spec:
           valueFrom:
             fieldRef:
               fieldPath: metadata.name
-        image: mxjob/mxnet-operator:v1beta1
+        image: hub.docker.prod.walmart.com/mxjob/mxnet-operator:v1beta1
         imagePullPolicy: Always
         name: mxnet-operator
       serviceAccountName: mxnet-operator

@@ -53,7 +53,7 @@ spec:
           value: "true"
         - name: MYSQL_DATABASE
           value: katib
-        image: mysql:8
+        image: hub.docker.prod.walmart.com/library/mysql:8
         livenessProbe:
           exec:
             command:

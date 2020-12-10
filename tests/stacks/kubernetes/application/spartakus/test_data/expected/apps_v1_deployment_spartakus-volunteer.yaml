@@ -36,6 +36,6 @@ spec:
             configMapKeyRef:
               key: usageId
               name: spartakus-config
-        image: gcr.io/google_containers/spartakus-amd64:v1.1.0
+        image: gcr.docker.prod.walmart.com/google_containers/spartakus-amd64:v1.1.0
         name: volunteer
       serviceAccountName: spartakus

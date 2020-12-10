@@ -18,7 +18,7 @@ spec:
         configMap:
           name: kubebench-config
       containers:
-      - image: gcr.io/kubeflow-images-public/kubebench/kubebench-operator-v1alpha2
+      - image: gcr.docker.prod.walmart.com/kubeflow-images-public/kubebench/kubebench-operator-v1alpha2
         name: kubebench-operator
         command:
         - /app/kubebench-operator-v1alpha2

@@ -29,7 +29,7 @@ spec:
             configMapKeyRef:
               name: parameters
               key: ingressName
-        image: gcr.io/kubeflow-images-public/ingress-setup:latest
+        image: gcr.docker.prod.walmart.com/kubeflow-images-public/ingress-setup:latest
         name: bootstrap
         volumeMounts:
         - mountPath: /var/ingress-config/

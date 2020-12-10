@@ -172,13 +172,13 @@ spec:
 # IP addresses can be obtained by running
 # 1. nslookup index.dockerhub.io
 # 2. nslookup dockerhub.io
-# 3. nslookup registry-1.docker.io
+# 3. nslookup hub.docker.prod.walmart.com
 apiVersion: compute.cnrm.cloud.google.com/v1beta1
 kind: ComputeFirewall
 metadata:
   name: testKptName-dockerhub # {"$kpt-set":"name-dockerhub"}
 spec:
-  description: "Allow egress to dockerhub and quay.io"
+  description: "Allow egress to dockerhub and quay.docker.prod.walmart.com"
   allow:
   - protocol: tcp
     ports:
@@ -204,7 +204,7 @@ spec:
   - "104.18.123.25"
   - "104.18.124.25"
   - "104.18.125.25"
-  # quay.io
+  # quay.docker.prod.walmart.com
   - "3.218.162.19"
   - "18.205.55.240"
   - "52.202.225.67"
@@ -212,7 +212,7 @@ spec:
   - "13.227.47.39"
   - "13.227.47.84"
   - "13.227.47.105"
-  # cdn.quay.io
+  # cdn.quay.docker.prod.walmart.com
   - "13.35.101.24"
   - "13.35.101.91"
   - "13.35.101.101"

@@ -8,6 +8,6 @@ resources:
 - ../../../upstream/env/platform-agnostic/mysql
 - ../../overlays/application/application.yaml
 images:
-- name: gcr.io/ml-pipeline/mysql
+- name: gcr.docker.prod.walmart.com/ml-pipeline/mysql
   newTag: '5.6'
-  newName: gcr.io/ml-pipeline/mysql
+  newName: gcr.docker.prod.walmart.com/ml-pipeline/mysql

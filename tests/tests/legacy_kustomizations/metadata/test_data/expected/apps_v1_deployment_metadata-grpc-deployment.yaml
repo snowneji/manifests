@@ -55,7 +55,7 @@ spec:
             name: metadata-db-secrets
         - configMapRef:
             name: metadata-grpc-configmap
-        image: gcr.io/tfx-oss-public/ml_metadata_store_server:v0.21.1
+        image: gcr.docker.prod.walmart.com/tfx-oss-public/ml_metadata_store_server:v0.21.1
         name: container
         ports:
         - containerPort: 8080

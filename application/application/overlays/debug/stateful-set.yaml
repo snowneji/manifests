@@ -10,7 +10,7 @@ spec:
     spec:
       containers:
       - name: manager
-        image: gcr.io/$(project)/application-controller:latest
+        image: gcr.docker.prod.walmart.com/$(project)/application-controller:latest
         command:
         - /go/bin/dlv
         args:

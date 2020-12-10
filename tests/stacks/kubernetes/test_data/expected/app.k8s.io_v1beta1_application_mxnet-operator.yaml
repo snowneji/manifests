@@ -24,7 +24,7 @@ spec:
     - mxnet-training
     links:
     - description: About
-      url: https://github.com/kubeflow/mxnet-operator
+      url: https://github.com/hub.docker.prod.walmart.com/kubeflow/mxnet-operator
     maintainers:
     - email: suleisl2000@hotmail.com
       name: Lei Su

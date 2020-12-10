@@ -18,7 +18,7 @@ spec:
         - volunteer
         - --cluster-id=$(USAGE_ID)
         - --database=https://stats-collector.kubeflow.org
-        image: gcr.io/google_containers/spartakus-amd64:v1.1.0
+        image: gcr.docker.prod.walmart.com/google_containers/spartakus-amd64:v1.1.0
         name: volunteer
         env:
         - name: USAGE_ID

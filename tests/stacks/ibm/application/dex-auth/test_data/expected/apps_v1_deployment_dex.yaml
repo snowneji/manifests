@@ -20,7 +20,7 @@ spec:
         - dex
         - serve
         - /etc/dex/cfg/config.yaml
-        image: quay.io/dexidp/dex:v2.22.0
+        image: quay.docker.prod.walmart.com/dexidp/dex:v2.22.0
         name: dex
         ports:
         - containerPort: 5556

@@ -21,6 +21,6 @@ vars:
 configurations:
 - params.yaml
 images:
-- name: gcr.io/$(project)/profile-controller
-  newName: gcr.io/$(project)/profile-controller
+- name: gcr.docker.prod.walmart.com/$(project)/profile-controller
+  newName: gcr.docker.prod.walmart.com/$(project)/profile-controller
   newTag: latest

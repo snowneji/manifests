@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: katib-mysql
-        image: mysql:8
+        image: hub.docker.prod.walmart.com/library/mysql:8
         args:
         - --datadir
         - /var/lib/mysql/datadir

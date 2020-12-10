@@ -18,7 +18,7 @@ metadata:
   clusterName: "project-id/us-central1/name" # {"$kpt-set":"asm-cluster-name"}
 spec:
   profile: asm
-  hub: gcr.io/gke-release/asm
+  hub: gcr.docker.prod.walmart.com/gke-release/asm
   tag: 1.4.10-asm.15
   values:
     gateways:

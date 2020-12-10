@@ -80,6 +80,6 @@ vars:
 configurations:
 - params.yaml
 images:
-- name: quay.io/dexidp/dex
-  newName: quay.io/dexidp/dex
+- name: quay.docker.prod.walmart.com/dexidp/dex
+  newName: quay.docker.prod.walmart.com/dexidp/dex
   newTag: v2.22.0

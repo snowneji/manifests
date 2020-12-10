@@ -14,7 +14,7 @@ spec:
         app: ml-pipeline-scheduledworkflow
     spec:
       containers:
-      - image: gcr.io/ml-pipeline/scheduledworkflow:dummy
+      - image: gcr.docker.prod.walmart.com/ml-pipeline/scheduledworkflow:dummy
         imagePullPolicy: IfNotPresent
         name: ml-pipeline-scheduledworkflow
         env:

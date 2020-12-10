@@ -47,7 +47,7 @@ spec:
             timeoutSeconds: 3
             periodSeconds: 2
         - name: csi-driver-registrar
-          image: quay.io/k8scsi/csi-node-driver-registrar:v1.1.0
+          image: quay.docker.prod.walmart.com/k8scsi/csi-node-driver-registrar:v1.1.0
           args:
             - --csi-address=$(ADDRESS)
             - --kubelet-registration-path=$(DRIVER_REG_SOCK_PATH)
@@ -68,7 +68,7 @@ spec:
               mountPath: /registration
         - name: liveness-probe
           imagePullPolicy: Always
-          image: quay.io/k8scsi/livenessprobe:v1.1.0
+          image: quay.docker.prod.walmart.com/k8scsi/livenessprobe:v1.1.0
           args:
             - --csi-address=/csi/csi.sock
             - --health-port=9810
